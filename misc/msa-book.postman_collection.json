@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "8c8bcac5-9d61-4bb0-9bc6-a639417dd3ca",
+		"name": "msa-book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/coffeeMember/createMemberTable",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/coffeeMember/createMemberTable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"coffeeMember",
+						"createMemberTable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/coffeeMember/insertMemberData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/coffeeMember/insertMemberData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"coffeeMember",
+						"insertMemberData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/coffeeStatus/createStatusTable",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/coffeeStatus/createStatusTable",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"coffeeStatus",
+						"createStatusTable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/coffeeOrder/coffeeOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"\",\n\t\"orderNumber\":\"1\",\n\t\"coffeeName\":\"espresso\",\n\t\"coffeeCount\":\"2\",\n\t\"customerName\":\"kevin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/coffeeOrder/coffeeOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"coffeeOrder",
+						"coffeeOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/coffeeStatus/coffeeOrderStatus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/coffeeStatus/coffeeOrderStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"coffeeStatus",
+						"coffeeOrderStatus"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

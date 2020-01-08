@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: msa-service-coffee-order
+  
+#Config Server      
+  cloud:
+    config:
+      uri: http://localhost:8888 
+      name: msa-architecture-config-server
+      
+#Kafka
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+#Eureka Client   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka/
