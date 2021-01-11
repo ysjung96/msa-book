@@ -17,3 +17,5 @@
 *.tar.gz
 *.rar
 
+/.gradle
+/.gradle
